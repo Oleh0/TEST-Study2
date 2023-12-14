@@ -1,10 +1,94 @@
 p {
 color: #A43FFF;
-font-size: 20px
+font-size: 20px;
 }
 .test-1 {
 	font-weight: 600;
 }
 .test-2 {
 	color: #20eA04;
+}
+.inline-test {
+	background-color: #fc3452;
+	text-align: center;
+}
+.block-test {
+	background-color: #34fcfc;
+	width: 400px;
+	height: 150px;
+	padding: 20px;
+	border: 1px #000000 solid;
+}
+.block-center {
+	background-color: #3cf4fc;
+	text-align: center;
+}
+.container2 {
+	width: 960px;
+	margin: 0 auto;
+	background-color:#cccccc;
+	display: flex;
+	flex-wrap: no-wrap;
+}
+.block-a {
+	background-color: #ffcccc;
+	width: calc(100%/12*4);
+}
+.block-b {
+	background-color: #ccccff;
+	width: calc(100%/12*4);
+}
+.block-c {
+	background-color: #ccffcc;
+	width: calc(100%/12*4);
+}
+
+@media screen and (max-width: 1200px) {
+	body {
+		font-size: 42px;
+	}
+	.block-a {
+	width: calc(100%/12*3);
+	}
+	.block-b {
+	width: calc(100%/12*9);
+	}
+	.block-c {
+	width: calc(100%/12*12);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 42px;
+	}
+	.block-a {
+	width: calc(100%/12*12);
+	}
+	.block-b {
+	display: none;
+	}
+	.block-c {
+	width: calc(100%/12*12);
+	}
+}
+
+.container {
+	background: #8115a9;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 300px;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+.container > div {
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	background: #558624;
+	width: 120px;
+	height: 70px;
+}
+.container > div:nth-child(2) {
+	align-self: flex-end;
 }
