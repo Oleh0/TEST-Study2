@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 	<title></title>
+	<meta charset="UTF-8">
+ 	<meta name="viemport" content="IE=edge">
+	<link rel="stylesheet" href="./style/main.css"> 
+</head>
+
+<body>
+    <div class="test-1">
+        ABC
+        <div class="test-2">
+            123
+        </div>
+    </div>
+    <div class="test-0">
+        CONTENT
+    </div>
+
+    <h1>Робота з формами</h1>
+    <h2>Текст</h2>
+    <input type="text" name="name1">
+    <textarea name="name2">
+        FFF
+    </textarea>
+    <hr>
+    <br>
+    <br>
+    <button type="button">
+        ???
+    </button>
+    <br>
+    <br>
+    <div>
+        <input type="text" name="name3">
+        <button type="button" data-name="btnSearch">
+            Пошук
+        </button>
+    </div>
+    <input type="button" name="name2" value="123">
+    <hr>
+    <br>
+    <br>
+    <input type="radio" name="radioBtn1" value="1">
+    <input type="radio" name="radioBtn1" value="2">
+    <input type="radio" name="radioBtn1" value="3">
+    <input type="radio" name="radioBtn1" value="4">
+    <br>
+    <input type="radio" name="radioBtn2">
+    <input type="radio" name="radioBtn2">
+    <input type="radio" name="radioBtn2">
+    <input type="radio" name="radioBtn2">
+    <hr>
+    <br>
+    <br>
+    <input type="checkbox" name="checkBtn1">
+    <hr>
+    <br>
+    <br>
+    <input type="color" name="colorinput">
+    <button type="button" data-name="btnColor">
+        Пошук
+    </button>
+    <hr>
+    <br>
+    <br>
+
+    <h2>Введіть дані:</h2>
+    <form>
+        <div>
+            <input type="text" name="name" placeholder="Введіть ім'я">
+            <input type="date" name="birthday" placeholder="Введіть дату народження">
+            <input type="email" name="email" placeholder="Ведіть пошту">
+            <select name="gender">
+                <option value="male">чоловік</option>
+                <option value="female">жінка</option>
+            </select>
+            <button type="submit">
+                Зберегти
+            </button>
+        </div>
+    </form>
+
+    <script>
+        const elinput = document.querySelector('[name="name3"]');
+        const elBtn = document.querySelector('[data-name="btnSearch"]');
+
+        elBtn.addEventListener('click',() => {
+            const { value } = elinput;
+
+            console.log('Value: ', value)
+        })
+    </script>
+</body>
+
+</html>

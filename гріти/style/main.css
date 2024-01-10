@@ -1,0 +1,40 @@
+.container {
+	display: grid;
+	grid-template-columns: 100px 150px 50px;
+	grid-template-rows: 250px 350px;
+	grid-template-areas:
+		"text-shoza-2 . text-shoza-1"
+		"text-shoza-3 text-shoza-3 text-shoza-5"
+		"text-shoza-3 text-shoza-3 text-shoza-4";
+	gap: 15px;
+}
+@media screen and (max-width: 600px) {
+	.container {
+		display: grid;
+		grid-template-columns: 4fr 8fr;
+		grid-template-areas:
+			"text-shoza-2 text-shoza-1"
+			"text-shoza-3 text-shoza-5"
+			"text-shoza-3 text-shoza-4"
+	}
+}
+.test-1 {
+	background-color: rgb(27,194,194);
+	grid-area: text-shoza-1;
+}
+.test-2 {
+	background-color: rgb(27,83,194);
+	grid-area: text-shoza-2;
+}
+.test-3 {
+	background-color: rgb(27,194,116);
+	grid-area: text-shoza-3;
+}
+.test-4 {
+	background-color: rgb(83,99,23);
+	grid-area: text-shoza-4;
+}
+.test-5 {
+	background-color: rgb(194,27,133);grid-area: text-shoza-1;
+	grid-area: text-shoza-5;
+}

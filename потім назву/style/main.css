@@ -1,0 +1,66 @@
+.container {
+	border: 1px solid #000000;
+}
+.container > div {
+	border: 1px solid #c4e40c;
+	min-height: 20px;
+}
+.test-1 {
+	font-size: 2em;
+}
+.test-1:hover {
+	color: #c4e40c;
+	cursor: pointer;
+}
+.container > div:empty {
+	background-color: #e40c0c;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.menu {
+	display: flex;
+}
+.menu > a {
+	padding: 5px;
+	min-width: 75px;
+	text-decoration: none;
+	display: block;
+	background-color: #4c0f86;
+	color: #ffffff;
+	text-align: center;
+}
+.menu > a:hover {
+	background-color: #c4e40c;
+	color: #4c0f86;
+}
+
+
+.test {
+	width: 450px;
+	height: 120px;
+	background: #03f330;
+	transition: all 1s linear;
+}
+.test:hover {
+	height: 250px;
+}
+.test-a {
+	width: 450px;
+	height: 120px;
+	background: #03fcc0;
+	transition: all 1s ease-in;
+}
+.test-a:hover {
+	height: 250px;
+}
+.img {
+	filter: blur(2px);
+	transition: all 1s;
+}
+.img:hover {
+	filter: blur(0);
+}

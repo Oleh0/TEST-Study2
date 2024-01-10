@@ -1,0 +1,27 @@
+.container {
+	border: 1px solid #000000;
+}
+.container > div {
+	border: 1px solid #c4e40c;
+}
+.warning-text {
+	color: #c4ffff;
+}
+div {
+	background-color: #6c3FFF;
+}
+[placeholder] {
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+[value="2"] {
+	background-color: #c4e40c;
+}
+option[value="3"] {
+	background-color: #c4eff0;
+}
+select [value="4"] {
+	color: #c4e50d;
+}
+div.test {
+	
+}

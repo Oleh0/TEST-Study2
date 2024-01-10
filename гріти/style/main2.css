@@ -1,0 +1,103 @@
+.container {
+	display: grid;
+	grid-template-columns: 3fr 5fr 3fr;
+	grid-template-rows: 200px 150px 100px;
+	grid-template-areas:
+		"text-shoza-2 . text-shoza-1"
+		"text-shoza-3 text-shoza-3 text-shoza-5"
+		"text-shoza-3 text-shoza-3 text-shoza-4";
+	gap: 15px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 50px;
+	background-color: #8bafe1;
+}
+@media screen and (max-width: 600px) {
+	.container {
+		display: grid;
+		grid-template-columns: 4fr 8fr;
+		grid-template-areas:
+			"text-shoza-2 text-shoza-1"
+			"text-shoza-3 text-shoza-5"
+			"text-shoza-3 text-shoza-4"
+	}
+}
+.container2 {
+	width: 1100px;
+	margin: 0 auto;
+}
+body > header {
+	background-color: #f18a14b3;
+	box-shadow: 4px 4px 15px 0px rgba(0,0,0,1.08);
+	height: 58px;
+}
+body > header .logo {
+	display: block;
+	background-image: url("./img/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 182px;
+	height: 58px;
+	background-color: #0000cc;
+}
+body > header .container2 {
+	display: flex;
+	height: 72px;
+}
+.container > .test-1 {
+	border: 2px solid #000000;
+    filter: drop-shadow(3px 3px 12px rgba(79, 79, 79, 0.1));
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+	width: 200px;
+	height: 200px;
+}
+.container > .test-2,
+.container > .test-3,
+.container > .test-4,
+.container > .test-5 {
+    border: 2px solid #000000;
+    filter: drop-shadow(3px 3px 12px rgba(79, 79, 79, 0.1));
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.test-1 {
+	background-image: url("./fonn.png") ;
+    background-repeat: repeat;
+	background-size: 10%;
+	border: 2px solid #ffffff;
+	filter: drop-shadow(3px 3px 12px rgba(79, 79, 79, 0.1));
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	text-decoration: none;
+	grid-area: text-shoza-1;
+}
+.test-2 {
+	background-color: rgb(27,83,194);
+	background-image: url("./ввввв.jpg");
+	grid-area: text-shoza-2;
+}
+.test-3 {
+	background-color: rgb(27,194,116);
+	grid-area: text-shoza-3;
+}
+.test-4 {
+	background-color: rgb(83,99,23);
+	grid-area: text-shoza-4;
+}
+.test-5 {
+	background-color: rgb(194,27,133);
+	grid-area: text-shoza-5;
+}

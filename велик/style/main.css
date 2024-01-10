@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+}
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+body > header {
+	background-color: #ffffff;
+	box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.08);
+	height: 58px;
+}
+body > header .logo {
+	display: block;
+	background-image: url("./img/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 182px;
+	height: 58px;
+	background-color: #0000cc;
+}
+body > header .container {
+	display: flex;
+	height: 72px;
+}
+section.hero {
+	background-color: #296dce;
+	background-image: url("./img/hero-angle.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 513px;
+}
+section.hero .container {
+	background-image: url("./img/image.svg");
+	height: 513px;
+	background-repeat: no-repeat;
+	background-position: bottom 0px right 30px;
+	box-sizing: border-box;
+	padding-left: 24px;
+}
+section.hero h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 46px;
+	line-height: 58px;
+	color: #ffffff;
+	margin: 0em;
+	padding-top: 72px;
+}
+section.hero h1 span {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24px;
+	line-height: 100px;
+	color: #ff8a00;
+}
+section.hero .to-about {
+	padding-top: 30px;
+}
+section.hero .to-about a {
+	width: 209px;
+	height: 44px;
+	border: 2px solid #ffffff;
+	filter: drop-shadow(3px 3px 12px rgba(79, 79, 79, 0.1));
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	text-decoration: none;
+}
+section.hero .to-about:hover {
+	filter: brightness(0.8);
+}
+section.hero .progress {
+	padding-top: 46px;
+}
+section.hero .progress .bar-cont {
+	width: 468px;
+	height: 15px;
+	background: #f3f3f3;
+	display: flex;
+	align-items: center;
+	padding: 1px;
+	border-radius: 3px;
+}
+section.hero .progress .bar-cont > div {
+	height: 11px;
+	width: 45%;
+	background: #296dce;
+	border-radius: 2px;
+}
+main .h2 {
+	color: #1092cb;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+main .sub-title img {
+	height: 11px;
+}
+main .sub-title {
+	font-size: 16px;
+	line-height: 19px;
+	color: #979fad;
+}
+main .content .avaible {
+	font-size: 16px;
+	line-height: 27px;
+	color: #696969;
+}
+main .content span {
+	color: #fe8907;
+}
